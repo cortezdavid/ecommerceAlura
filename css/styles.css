@@ -11,6 +11,10 @@ button{
     border-style:solid;
 }
 
+button:focus-visible{
+    outline: none;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -61,6 +65,7 @@ button{
 
 .header__button{
     background-color: #2A7AE4;
+    border: none;
     width: 118px;
     height: 40px;
 }
