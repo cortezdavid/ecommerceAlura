@@ -7,8 +7,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f5f5f5;
+}
+
 button{
     border-style:solid;
+    cursor: pointer;
 }
 
 button:focus-visible{
@@ -68,4 +73,19 @@ button:focus-visible{
     border: none;
     width: 118px;
     height: 40px;
+}
+
+.sections{
+    padding: 16px;
+}
+
+.productList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
 }
