@@ -17,7 +17,7 @@ button{
     cursor: pointer;
 }
 
-button:focus-visible{
+button:focus-visible, input:focus-visible, textarea:focus-visible{
     outline: none;
 }
 
@@ -140,21 +140,22 @@ a{
 .containerContact__form--name{
     width: 100%;
     height: 40px;
+    border: 0;
 }
 
 .containerContact__form--mensaje{
     width: 100%;
     height: 82px;
+    border: 0;
     resize: none;
 }
 
-.containerContact__form--name:focus ~ .containerContact__form--label{
-    top: -10px;
-    font-size: 10px;
-}
-
-.containerContact__form--mensaje:focus ~ .containerContact__form--label{
-    top: -10px;
+.containerContact__form--name:focus ~ .containerContact__form--label, .containerContact__form--mensaje:focus ~ .containerContact__form--label{
+    top: -5px;
+    font-size: 0.75rem;
+    background-color: #ffffff;
+    padding: 0 5px;
+    border-radius: 5px;
 }
 
 @media (min-width: 768px) { 
