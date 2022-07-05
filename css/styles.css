@@ -74,11 +74,12 @@ a{
     color: #ffffff;
 }
 
-.header__button{
+.acceptButton{
     background-color: #2A7AE4;
     border: none;
     width: 118px;
     height: 40px;
+    color: #ffffff
 }
 
 .sections{
@@ -125,16 +126,35 @@ a{
     font-weight: 700;
 }
 
-.containerContact__nombre{
+.containerContact__form{
+    position: relative;
+}
+
+.containerContact__form--label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transition: top 0.3s;
+}
+
+.containerContact__form--name{
+    width: 100%;
     height: 40px;
 }
 
-.containerContact__textarea{
+.containerContact__form--mensaje{
+    width: 100%;
     height: 82px;
+    resize: none;
 }
 
-.containerContact__button{
-    padding: 10px 16px;
+.containerContact__form--name:focus ~ .containerContact__form--label{
+    top: -10px;
+    font-size: 10px;
+}
+
+.containerContact__form--mensaje:focus ~ .containerContact__form--label{
+    top: -10px;
 }
 
 @media (min-width: 768px) { 

@@ -19,7 +19,7 @@
     <header class="header">
         <h1 class="header__titulo">Febrero Promocional</h1>
         <h2 class="header__subtitulo">Productos selecionados con 33% de descuento</h2>
-        <button class="header__button">Ver Consolasss</button>
+        <button class="acceptButton">Ver Consolas</button>
     </header>
     <main>
         <section class="sections">
@@ -167,14 +167,22 @@
         </div>
         <div class="containerContact">
             <p class="containerContact__contact">Hable de nosotros</p>
-            <input class="containerContact__nombre" type="text" placeholder="nombre">
-            <textarea class="containerContact__textarea" placeholder="Escribe tu mensaje"></textarea>
+            <div class="containerContact__form">
+                <input class="containerContact__form--name" type="text">
+                <label class="containerContact__form--label">Nombre</label>
+            </div>
+
+            <div class="containerContact__form">
+                <textarea class="containerContact__form--mensaje"></textarea>
+                <label class="containerContact__form--label">Escriba tu mensaje</label>
+            </div>
+            
             <div>
-                <button class="containerContact__button">Enviar mensaje</button>
+                <button class="acceptButton">Enviar mensaje</button>
             </div>
             
         </div>
-        <div class="containerNombre">
+        <div class="containerName">
             <p>Desarrollado por David Cortez 2022</p>
         </div>
     </footer>
