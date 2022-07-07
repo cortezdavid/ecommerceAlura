@@ -99,7 +99,7 @@ a{
 
 .products{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -201,6 +201,10 @@ a{
     .header__subtitulo{
         font-size: 1.37rem;
         font-weight: 700;
+    }
+
+    .sections{
+        padding: 32px;
     }
 
     .containerFooter{
