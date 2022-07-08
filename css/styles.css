@@ -27,11 +27,22 @@ a{
     font-weight: 700;
 }
 
+nav{
+    background-color: #ffffff;
+
+}
+
+header{
+    background-image: url("../img/portada.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .nav{
     display: flex;
     justify-content: space-between;
     padding: 16px 12px;
-    background-color: #ffffff;
 }
 
 .nav__button{
@@ -54,10 +65,6 @@ a{
 }
 
 .header{
-    background-image: url("../img/portada.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 192px;
     padding: 16px;
     display: flex;
@@ -107,7 +114,7 @@ a{
     font-weight: 700;
 }
 
-.containerFooter{
+.footer{
     background-color: #EAF2FD;
 }
 
@@ -161,6 +168,10 @@ a{
 
 
 @media (min-width: 768px) {
+
+    .nav{
+        padding: 16px 32px;
+    }
 
     .nav__containerSearch{
         display: flex;
@@ -235,12 +246,7 @@ a{
 
 @media (min-width: 900px){
 
-    body{
-        /* max-width: 1420px; */
-        margin: 0 auto;
-    }
-
-    main{
+   main, .nav, .containerFooter, .header{
         max-width: 1420px;
         margin: 0 auto;
     }
@@ -250,6 +256,7 @@ a{
     }
 
     .containerFooter{
+        height: 300px;
     }
 
     .containerMenu{
@@ -259,6 +266,10 @@ a{
 
     .containerMenu__logo{
         margin-right: 70px;
+    }
+
+    .containerMenu__links{
+        height: 100%;
     }
 
     .containerContact{
