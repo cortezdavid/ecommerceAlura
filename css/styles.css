@@ -29,7 +29,6 @@ a{
 
 nav{
     background-color: #ffffff;
-
 }
 
 header{
@@ -42,6 +41,7 @@ header{
 .nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 16px 12px;
 }
 
